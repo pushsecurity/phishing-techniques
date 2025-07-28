@@ -38,5 +38,4 @@ exclude:
   - vendor/ruby/
 
 # GitHub Pages settings
-github:
-  is_project_page: true
+# Note: Using standard Jekyll for GitHub Pages deployment
