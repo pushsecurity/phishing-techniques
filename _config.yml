@@ -1,7 +1,7 @@
 title: Phishing Techniques
 description: A comprehensive collection of phishing techniques and their analysis
-baseurl: ""
-url: "https://pushsecurity.github.io/phishing-techniques"
+baseurl: "/phishing-techniques"
+url: "https://pushsecurity.github.io"
 
 # Build settings
 markdown: kramdown
@@ -39,4 +39,4 @@ exclude:
 
 # GitHub Pages settings
 github:
-  is_project_page: false
+  is_project_page: true
