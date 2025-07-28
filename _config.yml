@@ -1,7 +1,7 @@
 title: Phishing Techniques
 description: A comprehensive collection of phishing techniques and their analysis
 baseurl: ""
-url: "https://jacques.github.io/phishing-techniques"
+url: "https://pushsecurity.github.io/phishing-techniques"
 
 # Build settings
 markdown: kramdown

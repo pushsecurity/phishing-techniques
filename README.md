@@ -1,11 +1,13 @@
 # Phishing Techniques Database
 
-A comprehensive Jekyll static site documenting various phishing techniques, their analysis, and countermeasures. This site is designed to be hosted on GitHub Pages and provides an interactive table-based interface for exploring different phishing methods.
+A comprehensive Jekyll static site documenting various phishing techniques, their analysis, and countermeasures. This site is designed to be hosted on GitHub Pages and provides an interactive matrix-based interface for exploring different phishing methods across multiple attack phases.
 
 ## Features
 
-- **Interactive Table Interface**: Main page features a large table with clickable cells linking to technique pages
+- **Interactive Matrix Interface**: Main page features a comprehensive table with clickable cells linking to technique pages
+- **Multi-Phase Analysis**: Techniques organized across 8 key phases: Targeting, Link Delivery, Link Camouflage, TI Evasion, Anti-Analysis, Page Obfuscation, Defeat MFA & CA, and Account Takeover
 - **Individual Technique Pages**: Detailed markdown pages for each phishing technique at `/techniques/{technique-name}`
+- **Push Security Branding**: Clean, professional design matching the Push Security aesthetic
 - **Responsive Design**: Modern, mobile-friendly design that works on all devices
 - **GitHub Pages Ready**: Configured for easy deployment on GitHub Pages
 - **SEO Optimized**: Built with Jekyll SEO tag for better search engine visibility
@@ -16,16 +18,21 @@ A comprehensive Jekyll static site documenting various phishing techniques, thei
 phishing-techniques/
 ├── _config.yml              # Jekyll configuration
 ├── _layouts/                # Layout templates
-│   ├── default.html         # Main layout
+│   ├── default.html         # Main layout with Push Security branding
 │   └── technique.html       # Technique page layout
 ├── _techniques/             # Technique markdown files
-│   ├── spear-phishing.md
-│   ├── whaling.md
+│   ├── apps-weak-security.md
+│   ├── email-legitimate-app.md
+│   ├── trusted-website-hosting.md
+│   ├── bot-protection.md
+│   ├── dom-structure-changes.md
+│   ├── aitm-phishing.md
+│   ├── session-theft.md
 │   └── ... (more techniques)
 ├── assets/
 │   └── css/
-│       └── style.css        # Site styling
-├── index.html               # Main page with table
+│       └── style.css        # Site styling with Push Security theme
+├── index.html               # Main page with technique matrix
 ├── Gemfile                  # Ruby dependencies
 └── README.md               # This file
 ```
@@ -112,39 +119,36 @@ description: Brief description of the technique
 
 # Example Technique
 
-## Overview
-Brief introduction to the technique...
+## Summary
 
-## How It Works
-Detailed explanation of the attack method...
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-## Real-World Examples
-Examples of actual attacks...
+## Examples
 
-## Detection and Prevention
-How to detect and prevent this technique...
-
-## Conclusion
-Summary and key takeaways...
+- [Example 1: Real-world case study](https://example.com/case-study-1)
+- [Example 2: Technical analysis](https://example.com/technical-analysis)
+- [Example 3: Detection methods](https://example.com/detection-methods)
 ```
 
 ## Customizing the Site
 
-### Modifying the Table
+### Modifying the Matrix
 
-The main table is located in `index.html`. You can:
-- Add new rows and columns
-- Change the categories
-- Modify the difficulty/effectiveness ratings
-- Update links to technique pages
+The main technique matrix is located in `index.html`. You can:
+- Add new rows representing different attack scenarios
+- Add new columns for additional attack phases
+- Update technique names and descriptions
+- Modify links to technique pages
+- Reorganize techniques across different phases
 
 ### Styling Changes
 
-The site styling is in `assets/css/style.css`. Key sections include:
-- **Header styling**: `.site-header`
-- **Table styling**: `.techniques-table`
-- **Technique page styling**: `.technique`
-- **Responsive design**: Media queries at the bottom
+The site styling is in `assets/css/style.css` and follows the Push Security design system. Key sections include:
+- **Header styling**: `.site-header` (black background with orange accents)
+- **Matrix styling**: `.techniques-table` (orange headers, white cells with orange borders)
+- **Technique page styling**: `.technique` (clean, professional layout)
+- **Button styling**: `.btn-primary` (orange buttons with hover effects)
+- **Responsive design**: Media queries for mobile and tablet devices
 
 ### Configuration Options
 
@@ -154,14 +158,20 @@ Edit `_config.yml` to customize:
 - Jekyll settings
 - Plugin configuration
 
-## Table Structure
+## Matrix Structure
 
-The main table is organized with the following columns:
-- **Category**: Groups techniques by type (Email Phishing, Web Phishing, etc.)
-- **Technique Type**: Specific technique names with links to detailed pages
-- **Difficulty**: Implementation difficulty (Low, Medium, High, Very High)
-- **Effectiveness**: Success rate of the technique
-- **Detection**: How easily the technique can be detected
+The main technique matrix is organized with the following columns representing different phases of phishing attacks:
+
+- **Targeting**: Initial target selection and reconnaissance techniques
+- **Link Delivery**: Methods used to deliver malicious links to targets
+- **Link Camouflage**: Techniques to disguise or obfuscate malicious URLs
+- **TI Evasion**: Threat Intelligence evasion methods
+- **Anti-Analysis**: Techniques to prevent automated analysis and detection
+- **Page Obfuscation**: Methods to hide or disguise malicious page content
+- **Defeat MFA & CA**: Techniques to bypass Multi-Factor Authentication and Conditional Access
+- **Account Takeover**: Final methods used to gain unauthorized access
+
+Each cell in the matrix contains clickable links to detailed technique pages, allowing users to explore specific methods within each attack phase.
 
 ## Contributing
 
@@ -179,9 +189,17 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Support
 
 If you encounter any issues or have questions:
-1. Check the [GitHub Issues](https://github.com/yourusername/phishing-techniques/issues)
+1. Check the [GitHub Issues](https://github.com/jacques/phishing-techniques/issues)
 2. Create a new issue with detailed information
 3. Include steps to reproduce the problem
+
+## Design System
+
+This site uses the Push Security design system with:
+- **Primary Color**: Black (`#000000`) for headers and footers
+- **Accent Color**: Orange (`#FF6600`) for buttons, headers, and highlights
+- **Typography**: Clean sans-serif fonts for optimal readability
+- **Layout**: Minimalist design with clear visual hierarchy
 
 ## Security Note
 
