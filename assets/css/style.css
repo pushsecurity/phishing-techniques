@@ -1,0 +1,435 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background: #000000;
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.site-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-title .orange-slash {
+    color: #FF6600;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: #FF6600;
+}
+
+/* Main content */
+.site-main {
+    min-height: calc(100vh - 200px);
+    padding: 2rem 0;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 3rem 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Techniques table */
+.techniques-table-container {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.techniques-table-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.techniques-table {
+    overflow-x: auto;
+    margin-top: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: #FF6600;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+    border: 1px solid #FF6600;
+}
+
+td {
+    padding: 1rem;
+    border: 1px solid #FF6600;
+    vertical-align: middle;
+    background-color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Cell types */
+.category-cell {
+    background: #ecf0f1;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.technique-cell a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.technique-cell a:hover {
+    color: #FF6600;
+}
+
+.difficulty-cell,
+.effectiveness-cell,
+.detection-cell {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Difficulty colors */
+.difficulty-cell:contains("Low") {
+    color: #27ae60;
+}
+
+.difficulty-cell:contains("Medium") {
+    color: #f39c12;
+}
+
+.difficulty-cell:contains("High") {
+    color: #e74c3c;
+}
+
+.difficulty-cell:contains("Very High") {
+    color: #8e44ad;
+}
+
+/* Legend */
+.legend {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.legend h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.difficulty-low {
+    background-color: #27ae60;
+}
+
+.difficulty-medium {
+    background-color: #f39c12;
+}
+
+.difficulty-high {
+    background-color: #e74c3c;
+}
+
+.difficulty-very-high {
+    background-color: #8e44ad;
+}
+
+/* Technique pages */
+.technique {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.technique-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.breadcrumb a {
+    color: #777;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.technique-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.technique-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.technique-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.technique-content h2 {
+    color: #333;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #FF6600;
+    padding-bottom: 0.5rem;
+}
+
+.technique-content h3 {
+    color: #34495e;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.4rem;
+}
+
+.technique-content p {
+    margin-bottom: 1rem;
+}
+
+.technique-content ul,
+.technique-content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.technique-content li {
+    margin-bottom: 0.5rem;
+}
+
+.technique-content blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.technique-content code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.technique-content pre {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.technique-content pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+}
+
+.technique-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #ecf0f1;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #FF6600;
+    color: white;
+    border: 1px solid #FF6600;
+}
+
+.btn-primary:hover {
+    background: #E65C00;
+    border-color: #E65C00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.site-footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .techniques-table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .legend-items {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .technique-header h1 {
+        font-size: 2rem;
+    }
+
+    .technique-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .techniques-table-container {
+        padding: 1rem;
+    }
+
+    .technique {
+        padding: 1rem;
+    }
+}

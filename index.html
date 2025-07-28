@@ -1,0 +1,64 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero">
+    <h1>Phishing Techniques Database</h1>
+    <p>A comprehensive collection of phishing techniques, their analysis, and countermeasures.</p>
+</div>
+
+<div class="techniques-table-container">
+    <h2>Phishing Techniques Matrix</h2>
+    <p>Click on any cell in the table below to learn more about specific phishing techniques:</p>
+
+    <div class="techniques-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Targeting</th>
+                    <th>Link Delivery</th>
+                    <th>Link Camouflage</th>
+                    <th>TI Evasion</th>
+                    <th>Anti-Analysis</th>
+                    <th>Page Obfuscation</th>
+                    <th>Defeat MFA & CA</th>
+                    <th>Account Takeover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1: Apps with weak security configs -->
+                <tr>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/apps-weak-security' | relative_url }}">Apps with weak security
+                            configs</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/email-legitimate-app' | relative_url }}">Email from legitimate
+                            app/service</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/email-legitimate-app' | relative_url }}">Email from legitimate
+                            app/service</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/trusted-website-hosting' | relative_url }}">Trusted website hosting</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/bot-protection' | relative_url }}">Bot protection</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/dom-structure-changes' | relative_url }}">DOM structure changes</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/aitm-phishing' | relative_url }}">Attacker-in-the-Middle (AiTM)
+                            phishing</a>
+                    </td>
+                    <td class="technique-cell">
+                        <a href="{{ '/techniques/session-theft' | relative_url }}">Session theft</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+title: Phishing Techniques
+description: A comprehensive collection of phishing techniques and their analysis
+baseurl: ""
+url: "https://jacques.github.io/phishing-techniques"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /techniques/:title/
+
+# Collections
+collections:
+  techniques:
+    output: true
+    permalink: /techniques/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "techniques"
+    values:
+      layout: "technique"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# GitHub Pages settings
+github:
+  is_project_page: false
