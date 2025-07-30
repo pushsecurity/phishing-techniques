@@ -16,5 +16,5 @@ It is relatively easy to detect the use of remote desktop software, but given th
 
 ## Examples
 
-- [Example 1: EvilNoVNC] (https://pushsecurity.com/blog/phishing-2-0-how-phishing-toolkits-are-evolving-with-aitm/) — Also see this [video demo](https://www.youtube.com/watch?v=6W1eN5_KbKY)
+- [Example 1: EvilNoVNC](https://pushsecurity.com/blog/phishing-2-0-how-phishing-toolkits-are-evolving-with-aitm/) — Also see this [video demo](https://www.youtube.com/watch?v=6W1eN5_KbKY)
 - [Example 2: CuddlePhish](https://posts.specterops.io/phishing-with-dynamite-7d33d8fac038)
