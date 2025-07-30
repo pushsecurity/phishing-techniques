@@ -27,7 +27,7 @@ Creating an attacker-owned Slack or Teams tenant and inviting target users to jo
 - [Example 4: "Urgent Zoom meeting" credential phish](https://onlineacademiccommunity.uvic.ca/phishbowl/2025/05/21/urgent-zoom-meeting/) — A campaign targeted university staff with fake Zoom invite emails that appeared to come from colleagues and implied urgent HR issues. The invite link opened what looked like a live Zoom meeting with “real” participants (actually pre-recorded video feeds) to build legitimacy. It then presented a spoofed Zoom login page to harvest the user’s Office 365 credentials. 
 - [Example 4: Russian threat actors target victims over Signal](https://www.volexity.com/blog/2025/02/13/multiple-russian-threat-actors-targeting-microsoft-device-code-authentication/) - Russian threat actors aimed at compromising Microsoft 365 (M365) accounts via spear-phishing via Signal.
 
-## Further Reading
+## Further reading
 
 - [Slack Attack: A phisher's guide to initial access](https://pushsecurity.com/blog/slack-phishing-for-initial-access/)
 - [Slack Attack: A phisher's guide to persistence and lateral movement](https://pushsecurity.com/blog/phishing-slack-persistence/)
