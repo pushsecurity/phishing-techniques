@@ -135,33 +135,44 @@ body {
 }
 
 .techniques-table {
-    overflow-x: auto;
     margin-top: 1.5rem;
+    border: 2px solid #EE4323;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    border-radius: 8px;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    border: none;
+    border-spacing: 0;
+    margin: 0;
 }
 
 th {
     background: #EE4323;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: left;
     font-weight: 700;
     border: 1px solid #EE4323;
+    font-size: 0.9rem;
 }
 
 td {
-    padding: 1rem;
-    border: 1px solid #EE4323;
+    padding: 0.5rem;
+    border: none;
     vertical-align: middle;
     background-color: white;
+    font-size: 0.9rem;
 }
 
 tr:hover {
@@ -176,15 +187,59 @@ tr:hover {
     text-align: center;
 }
 
-.technique-cell a {
-    color: #000000;
-    text-decoration: underline;
-    font-weight: 400;
-    transition: color 0.3s ease;
+.technique-cell {
+    border: 1px solid #EE4323;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.technique-cell a:hover {
-    color: #EE4323;
+/* Remove borders on outer edges to prevent doubling */
+.technique-cell:first-child {
+    border-left: none;
+}
+
+.technique-cell:last-child {
+    border-right: none;
+}
+
+tr:first-child .technique-cell {
+    border-top: none;
+}
+
+tr:last-child .technique-cell {
+    border-bottom: none;
+}
+
+.technique-cell:hover {
+    background-color: #fff5f5;
+}
+
+.technique-cell a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: inherit;
+    margin: -0.75rem;
+    box-sizing: border-box;
+}
+
+.missing-technique {
+    color: #999;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.empty-cell {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: default;
+}
+
+.empty-cell:hover {
+    background-color: #f8f9fa;
 }
 
 .difficulty-cell,
