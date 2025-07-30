@@ -22,4 +22,4 @@ There are a few different variations of AitM, including Browser-in-the-Middle (B
 - Example 4: [2025 surge in Tycoon 2FA attacks](https://www.proofpoint.com/us/blog/email-and-cloud-threats/aitm-phishing-attacks-evolving-threat-microsoft-365)
 - Example 5: [EvilProxy BEC attack results in redirecting large financial transaction](https://thomasmurray.com/insights/evilproxy-deep-dive-outlook-teams-ps1m-heist)
 - Example 6: [AitM attack on Mailchimp](https://pushsecurity.com/blog/dissecting-a-recent-mailchimp-phishing-attack/)
-- Example 7: [AitM attack on Onfido] (https://pushsecurity.com/blog/investigating-a-recent-malvertising-campaign-targeting-onfido-customers/)
+- Example 7: [AitM attack on Onfido](https://pushsecurity.com/blog/investigating-a-recent-malvertising-campaign-targeting-onfido-customers/)
