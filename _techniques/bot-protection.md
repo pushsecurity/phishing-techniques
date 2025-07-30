@@ -1,17 +1,18 @@
 ---
 layout: technique
-title: Bot Protection
-description: Techniques to prevent automated analysis and detection
+title: Bot protection
+description: Using legitimate bot protection tools to prevent automated analysis
 ---
 
-# Bot Protection
+# Bot protection
 
 ## Summary
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Attackers are using common bot protection technologies like CAPTCHA and Cloudflare Turnstile to prevent security bots from accessing their web pages to be able to analyse them (and therefore block pages from being automatically flagged). 
+
+This requires anyone visiting the page to pass a bot check/challenge before the page can be loaded, meaning the full page cannot be analysed by automated tools without human interaction. 
 
 ## Examples
 
-- [Example 1: CAPTCHA Bypass Techniques](https://example.com/captcha-bypass)
-- [Example 2: Browser Fingerprinting](https://example.com/browser-fingerprinting)
-- [Example 3: Behavioral Analysis Evasion](https://example.com/behavioral-evasion)
+- [Example 1: NakedPages AitM phishing kit](https://pushsecurity.com/blog/how-aitm-phishing-kits-evade-detection/#id-step-2-cloudflare-turnstile-for-bot-detection) — Using Cloudflare Turnstile for bot protection.
+- [Example 2: Tycoon 2FA AitM phishing kit](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/tycoon2fa-new-evasion-technique-for-2025/) — Using a custom CAPTCHA rendered via HTML5 canvas.
