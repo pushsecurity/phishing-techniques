@@ -1,10 +1,10 @@
 ---
 layout: technique
-title: Apps with Weak Security Configs
+title: Apps with weak security configs
 description: Targeting applications with weak security configuration options
 ---
 
-# Apps with Weak Security Configs
+# Apps with weak security configs
 
 ## Summary
 
