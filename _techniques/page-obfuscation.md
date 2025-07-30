@@ -4,7 +4,7 @@ title: Page obfuscation
 description: Obfuscating and randomizing page elements
 ---
 
-# Page element obfuscation
+# Page obfuscation
 
 ## Summary
 
