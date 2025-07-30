@@ -1,10 +1,10 @@
 ---
 layout: technique
-title: Attacker-in-the-Middle (AiTM) Phishing
+title: Attacker-in-the-Middle (AiTM) phishing
 description: Using reverse-proxy phishing kits to steal user sessions
 ---
 
-# Attacker-in-the-Middle (AiTM) Phishing
+# Attacker-in-the-Middle (AiTM) phishing
 
 ## Summary
 
