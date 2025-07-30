@@ -4,7 +4,7 @@ title: QR codes
 description: Hiding malicious links in QR codes
 ---
 
-# AI/LLM poisoning
+# QR codes
 
 ## Summary
 
