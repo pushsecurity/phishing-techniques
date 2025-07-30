@@ -1,7 +1,7 @@
 ---
 layout: technique
 title: Malvertising
-description: Sending automated emails from legitimate apps and services
+description: Distributing malicious links via ads on search engines, social media, and other websites.
 ---
 
 # Malvertising
@@ -23,6 +23,6 @@ The introduction of AI overviews is also changing the experience for users, wher
 ## Examples
 
 - [Example 1: Onfido malvertising attack](https://pushsecurity.com/blog/investigating-a-recent-malvertising-campaign-targeting-onfido-customers/) — Attackers believed to be Scattered Spider registered malicious ads impersonating Onfido, the digital identity verification platform, leading to an AitM phishing page.  
-- [Example 2: Google Ads Users targeted via malvertising](https://www.malwarebytes.com/blog/news/2025/01/microsoft-advertisers-phished-via-malicious-google-ads) — Threat actors bought Google search ads for “Microsoft Ads,” tricking users into clicking a cloaked URL that ultimately redirected to a phishing page for Microsoft’s advertising platform. The fake ads[.]mcrosoftt[.]com login page prompted password resets and attempted to capture MFA codes.
+- [Example 2: Google Ads Users targeted via malvertising](https://www.malwarebytes.com/blog/news/2025/01/microsoft-advertisers-phished-via-malicious-google-ads) — Threat actors bought Google search ads for “Microsoft Ads,” tricking users into clicking a cloaked URL that ultimately redirected to a phishing page for Microsoft’s advertising platform. The fake login page prompted password resets and attempted to capture MFA codes.
 - [Example 3: Microsoft advertisers phished via malicious Google ads](https://www.malwarebytes.com/blog/news/2025/01/microsoft-advertisers-phished-via-malicious-google-ads) — Attackers ran ads mimicking Google’s, leading to fake Google Ads sign-in pages hosted on Google Sites. Victims’ credentials and 2FA codes were stolen via WebSocket and used to hijack their ad accounts.
 - [Example 4: Fake bank promotion ads on Instagram](https://www.bleepingcomputer.com/news/security/instagram-ads-mimicking-bmo-eq-bank-are-finance-scams/) — Sophisticated scams on Instagram have used sponsored posts to pose as banks. For example, ads mimicking EQ Bank offered an unrealistically high 4.5% yield. Tapping the ad led users to a site that spoofed EQ Bank’s login page to steal credentials.
