@@ -1,17 +1,26 @@
 ---
 layout: technique
-title: Trusted Website Hosting
-description: Using legitimate websites to host phishing content
+title: Trusted website hosting
+description: Using legitimate websites and hosting providers to host phishing content
 ---
 
-# Trusted Website Hosting
+# Trusted website hosting
 
 ## Summary
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Attackers are using trusted websites to house their phishing links, as well as using trusted hosting providers (e.g. Azure, Google, AWS, Cloudflare) to host the phishing pages themselves. 
+
+Legitimate services are less likely to be flagged by link analysis tools and effectively cloak the initial URL delivered to the victim to increase the chance of successful delivery of and access to the link. 
+
+This prevents many link-based analysis techniques from flagging the malicious page. It also provides the link a level of authenticity that may increase the likelihood of a victim falling for the lure.
 
 ## Examples
 
-- [Example 1: GitHub Pages Phishing](https://example.com/github-pages-phishing)
-- [Example 2: Google Sites Abuse](https://example.com/google-sites-abuse)
-- [Example 3: Netlify Hosted Scams](https://example.com/netlify-scams)
+- Example 1: Abusing highly trusted sources like Google by: [abusing script.google.com to host phishing pages](https://www.bleepingcomputer.com/news/security/threat-actors-abuse-google-apps-script-in-evasive-phishing-attacks/); [creating Google Forms to host phishing links](https://cybersecuritynews.com/google-forms-weaponized/); and [abusing sites.google.com to host phishing pages](https://x.com/nicksdjohnson/status/1912439023982834120)
+- [Example 2: Using fake security alert issues on GitHub to distribute phishing links](https://www.bleepingcomputer.com/news/security/fake-security-alert-issues-on-github-use-oauth-app-to-hijack-accounts/) — A phishing campaign leveraged Dropbox’s legitimate email infrastructure. Employees received an email from no-reply@dropbox.com with a link to a PDF hosted on Dropbox. The PDF contained a phishing URL. Scanning the QR code or clicking the link led to credential theft pages.
+- [Example 3: Using Cloudflare developer domains to host phishing sites](https://pushsecurity.com/blog/how-aitm-phishing-kits-evade-detection/#id-step-1-cloudflare-workers-for-the-initial-gateway) — Cloudflare’s pages.dev and workers.dev domains are increasingly used by attackers for phishing domains. Cloudflare Workers are a serverless execution environment (a bit like AWS Lambdas) to prevent checks based on uncategorized/rare domains.
+- [Example 4: Azure Front Door used to host AiTM sites](https://www.aitm-feed.com/blog/azure-front-door-aitm-phishing) — Azure FD used to host AiTM phishing pages, using multiple redirect stages e.g. page1.azurefd.net to page2.azurefd.net, etc.), targeting the World Food Programme, UNICEF, major news outlets, and even U.S. government email accounts.
+- [Example 5: Multiple cloud storage phishing links used to obfuscate malicious sites used in phishing campaigns](https://radicl.com/radicl-blog/cloudy-with-a-chance-of-cc-theft) — Methods include distributing a HTML file hosted on a Linode Object Storage URL.
+
+## Further reading
+— [Useful resource of sites that allow attackers to “live off trusted sites”](https://lots-project.com/)
