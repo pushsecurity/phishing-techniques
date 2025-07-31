@@ -20,4 +20,4 @@ It’s possible to construct a completely different DOM that ensures the same vi
 
 ## Further reading
 
-- How phishing kits evade detection](https://pushsecurity.com/resources/on-demand-webinar-phish-kit-teardown)
+- [How phishing kits evade detection](https://pushsecurity.com/resources/on-demand-webinar-phish-kit-teardown)
