@@ -1,5 +1,5 @@
-title: Push Security - Phishing Techniques
-description: A comprehensive collection of phishing techniques and their analysis by Push Security
+title: Phishing Detection Evasion Techniques
+description: A collection of phishing techniques used to evade detection from Push Security.
 baseurl: "/phishing-techniques"
 url: "https://pushsecurity.github.io"
 
@@ -36,6 +36,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-# GitHub Pages settings
-# Note: Using standard Jekyll for GitHub Pages deployment
