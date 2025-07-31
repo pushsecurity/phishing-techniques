@@ -46,8 +46,8 @@ columns:
 
   - name: "Page Obfuscation"
     techniques:
-      - "dom-structure-changes"
-      - "page-element-changes"
+      - "dom-obfuscation"
+      - "page-obfuscation"
       - "desktop-control"
       - "code-obfuscation"
 
