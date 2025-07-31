@@ -5,7 +5,7 @@ title: Home
 
 <div class="hero">
     <h1>Phishing Techniques Database</h1>
-    <p>A comprehensive collection of phishing techniques, their analysis, and countermeasures.</p>
+    <p>A comprehensive collection of phishing techniques used to evade detection.</p>
 </div>
 
 <div class="techniques-table-container">
@@ -16,48 +16,54 @@ title: Home
         <table>
             <thead>
                 <tr>
-                    <th>Targeting</th>
-                    <th>Link Delivery</th>
-                    <th>Link Camouflage</th>
-                    <th>TI Evasion</th>
-                    <th>Anti-Analysis</th>
-                    <th>Page Obfuscation</th>
-                    <th>Defeat MFA & CA</th>
-                    <th>Account Takeover</th>
+                    {% for column in site.data.techniques-table.columns %}
+                    <th>{{ column.name }}</th>
+                    {% endfor %}
                 </tr>
             </thead>
             <tbody>
-                <!-- Row 1: Apps with weak security configs -->
+                {% comment %} Calculate the maximum number of rows needed {% endcomment %}
+                {% assign max_rows = 0 %}
+                {% for column in site.data.techniques-table.columns %}
+                {% if column.techniques.size > max_rows %}
+                {% assign max_rows = column.techniques.size %}
+                {% endif %}
+                {% endfor %}
+
+                {% comment %} Generate rows {% endcomment %}
+                {% for row_index in (0..max_rows) %}
+                {% assign has_content = false %}
+                {% for column in site.data.techniques-table.columns %}
+                {% assign technique_ref = column.techniques[row_index] %}
+                {% if technique_ref and technique_ref != null %}
+                {% assign has_content = true %}
+                {% break %}
+                {% endif %}
+                {% endfor %}
+
+                {% if has_content %}
                 <tr>
+                    {% for column in site.data.techniques-table.columns %}
+                    {% assign technique_ref = column.techniques[row_index] %}
+                    {% if technique_ref and technique_ref != null %}
+                    {% assign technique = site.techniques | where_exp: "item", "item.path contains technique_ref" |
+                    first %}
+                    {% if technique %}
                     <td class="technique-cell">
-                        <a href="{{ '/techniques/apps-weak-security' | relative_url }}">Apps with weak security
-                            configs</a>
+                        <a href="{{ technique.url | relative_url }}">{{ technique.title }}</a>
                     </td>
+                    {% else %}
                     <td class="technique-cell">
-                        <a href="{{ '/techniques/email-legitimate-app' | relative_url }}">Email from legitimate
-                            app/service</a>
+                        <span class="missing-technique">{{ technique_ref }} (not found)</span>
                     </td>
-                    <td class="technique-cell">
-                        <a href="{{ '/techniques/email-legitimate-app' | relative_url }}">Email from legitimate
-                            app/service</a>
-                    </td>
-                    <td class="technique-cell">
-                        <a href="{{ '/techniques/trusted-website-hosting' | relative_url }}">Trusted website hosting</a>
-                    </td>
-                    <td class="technique-cell">
-                        <a href="{{ '/techniques/bot-protection' | relative_url }}">Bot protection</a>
-                    </td>
-                    <td class="technique-cell">
-                        <a href="{{ '/techniques/dom-structure-changes' | relative_url }}">DOM structure changes</a>
-                    </td>
-                    <td class="technique-cell">
-                        <a href="{{ '/techniques/aitm-phishing' | relative_url }}">Attacker-in-the-Middle (AiTM)
-                            phishing</a>
-                    </td>
-                    <td class="technique-cell">
-                        <a href="{{ '/techniques/session-theft' | relative_url }}">Session theft</a>
-                    </td>
+                    {% endif %}
+                    {% else %}
+                    <td class="technique-cell empty-cell"></td>
+                    {% endif %}
+                    {% endfor %}
                 </tr>
+                {% endif %}
+                {% endfor %}
             </tbody>
         </table>
     </div>

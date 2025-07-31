@@ -1,0 +1,38 @@
+# Phishing Techniques Matrix Configuration
+# Each column contains a list of technique references (filename without .md extension)
+# Empty cells can be left as null or omitted
+
+columns:
+  - name: "Targeting"
+    techniques:
+      - "apps-weak-security"
+
+  - name: "Link Delivery"
+    techniques:
+      - "email-legitimate-app"
+      - "trusted-website-hosting"
+      - "email-legitimate-app"
+
+  - name: "Link Camouflage"
+    techniques:
+      - "email-legitimate-app"
+
+  - name: "TI Evasion"
+    techniques:
+      - "trusted-website-hosting"
+
+  - name: "Anti-Analysis"
+    techniques:
+      - "bot-protection"
+
+  - name: "Page Obfuscation"
+    techniques:
+      - "dom-structure-changes"
+
+  - name: "Defeat MFA & CA"
+    techniques:
+      - "aitm-phishing"
+
+  - name: "Account Takeover"
+    techniques:
+      - "session-theft"
