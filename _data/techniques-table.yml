@@ -6,33 +6,65 @@ columns:
   - name: "Targeting"
     techniques:
       - "apps-weak-security"
+      - "saas-admins"
 
   - name: "Link Delivery"
     techniques:
       - "email-legitimate-app"
-      - "trusted-website-hosting"
-      - "email-legitimate-app"
+      - "in-app-phishing"
+      - "malvertising"
+      - "instant-messenger"
+      - "social-media"
+      - "sms"
+      - "ai-poisoning"
+      - "qr-codes"
+      - "email-attachment"
 
   - name: "Link Camouflage"
     techniques:
       - "email-legitimate-app"
+      - "trusted-website-hosting"
+      - "url-obfuscation"
 
   - name: "TI Evasion"
     techniques:
       - "trusted-website-hosting"
+      - "mass-domain-registration"
+      - "domain-rotation-redirection"
+      - "rentable-subdomains"
+      - "local-webpage"
 
   - name: "Anti-Analysis"
     techniques:
+      - "domain-rotation-redirection"
       - "bot-protection"
+      - "oidc-logins"
+      - "delayed-execution"
+      - "single-use-links"
+      - "conditional-loading"
+      - "anti-sandbox"
 
   - name: "Page Obfuscation"
     techniques:
       - "dom-structure-changes"
+      - "page-element-changes"
+      - "desktop-control"
+      - "code-obfuscation"
 
   - name: "Defeat MFA & CA"
     techniques:
       - "aitm-phishing"
+      - "mfa-downgrade"
+      - "device-code-phishing"
+      - "consent-phishing"
+      - "verification-phishing"
+      - "app-specific-passwords"
+      - "mobile-user-agents"
 
   - name: "Account Takeover"
     techniques:
       - "session-theft"
+      - "credential-theft"
+      - "consent-phishing"
+      - "verification-phishing"
+      - "app-specific-passwords"
