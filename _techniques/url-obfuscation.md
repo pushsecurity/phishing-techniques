@@ -10,7 +10,7 @@ description: Using URL obfuscation techniques to prevent detection
 
 Attackers use various URL obfuscation techniques to prevent URL-based detections from firing when a link is analysed. 
 
-This is typically used alongside [trusted website hosting] and [domain rotation, redirection, and load balancing] to bypass URL and domain-based checks and serve up a malicious domain to the user.
+This is typically used alongside [trusted website hosting](https://pushsecurity.github.io/phishing-techniques/techniques/trusted-website-hosting/) and [domain rotation, redirection, and load balancing](https://pushsecurity.github.io/phishing-techniques/techniques/domain-rotation-redirection/) to bypass URL and domain-based checks and serve up a malicious domain to the user.
 
 The most common methods used are:
 
