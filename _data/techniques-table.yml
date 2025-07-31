@@ -7,6 +7,8 @@ columns:
     techniques:
       - "apps-weak-security"
       - "saas-admins"
+      - "identity-provider"
+      - "granular-targeting"
 
   - name: "Link Delivery"
     techniques:
