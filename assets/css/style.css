@@ -15,6 +15,18 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Global link styles */
+a {
+    color: #EE4323;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d13a1f;
+    text-decoration: underline;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,7 +37,7 @@ body {
 .site-header {
     background: #000000;
     color: white;
-    padding: 1.5rem 0;
+    padding: 0.4rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -34,102 +46,122 @@ body {
 
 .site-header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
 }
 
-.site-title {
-    font-size: 1.8rem;
-    font-weight: 700;
+.site-nav {
     display: flex;
     align-items: center;
-}
-
-.site-title a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.header-logo {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
-}
-
-.site-title .orange-slash {
-    color: #EE4323;
-    margin-right: 5px;
+    gap: 1rem;
 }
 
 .site-nav a {
     color: white;
     text-decoration: none;
-    margin-left: 1.5rem;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
     font-weight: 500;
+}
+
+.site-nav a:not(:last-child)::after {
+    content: '|';
+    margin-left: 1rem;
+    color: white;
+    opacity: 0.6;
 }
 
 .site-nav a:hover {
     color: #EE4323;
 }
 
+.contribute-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.github-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
 /* Main content */
 .site-main {
     min-height: calc(100vh - 200px);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 /* Hero section */
 .hero {
     text-align: center;
-    margin-bottom: 3rem;
-    padding: 3rem 0;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero-logo {
-    margin-bottom: 2rem;
-}
-
-.hero-logo-img {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
-    margin: 0 auto;
-}
-
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
-    font-weight: 700;
+    color: #222222;
+    font-weight: 300;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #7f8c8d;
-    max-width: 600px;
+    color: #666666;
+    max-width: 700px;
     margin: 0 auto;
     font-weight: 400;
+}
+
+/* Content cards */
+.content-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.content-card h2 {
+    color: #111111;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.content-card p {
+    color: #111111;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.content-card a {
+    color: #EE4323;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content-card a:hover {
+    color: #d13a1f;
+    text-decoration: underline;
 }
 
 /* Techniques table */
 .techniques-table-container {
     background: white;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .techniques-table-container h2 {
-    color: #2c3e50;
+    color: #111111;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -177,14 +209,6 @@ td {
 
 tr:hover {
     background-color: #f5f5f5;
-}
-
-/* Cell types */
-.category-cell {
-    background: #ecf0f1;
-    font-weight: 600;
-    color: #2c3e50;
-    text-align: center;
 }
 
 .technique-cell {
@@ -242,84 +266,11 @@ tr:last-child .technique-cell {
     background-color: #f8f9fa;
 }
 
-.difficulty-cell,
-.effectiveness-cell,
-.detection-cell {
-    text-align: center;
-    font-weight: 500;
-}
-
-/* Difficulty colors */
-.difficulty-cell:contains("Low") {
-    color: #27ae60;
-}
-
-.difficulty-cell:contains("Medium") {
-    color: #f39c12;
-}
-
-.difficulty-cell:contains("High") {
-    color: #e74c3c;
-}
-
-.difficulty-cell:contains("Very High") {
-    color: #8e44ad;
-}
-
-/* Legend */
-.legend {
-    background: white;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.legend h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.legend-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.legend-color {
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.difficulty-low {
-    background-color: #27ae60;
-}
-
-.difficulty-medium {
-    background-color: #f39c12;
-}
-
-.difficulty-high {
-    background-color: #e74c3c;
-}
-
-.difficulty-very-high {
-    background-color: #8e44ad;
-}
-
 /* Technique pages */
 .technique {
     background: white;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -345,50 +296,37 @@ tr:last-child .technique-cell {
     text-decoration: underline;
 }
 
-.technique-header h1 {
-    color: #2c3e50;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.technique-description {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-    font-style: italic;
-    font-weight: 400;
-}
-
 .technique-content {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #2c3e50;
+    color: #111111;
     font-weight: 400;
 }
 
 .technique-content h1 {
-    color: #2c3e50;
-    margin: 0 0 2rem 0;
-    font-size: 2.2rem;
-    font-weight: 600;
+    color: #111111;
+    margin: 0 0 0rem 0;
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .technique-content h2 {
     color: #333;
-    margin: 2rem 0 1rem 0;
-    font-size: 1.6rem;
+    margin: 1rem 0 1rem 0;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
 .technique-content h3 {
     color: #34495e;
     margin: 1.5rem 0 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .technique-content p {
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .technique-content ul,
@@ -399,6 +337,7 @@ tr:last-child .technique-cell {
 
 .technique-content li {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .technique-content blockquote {
@@ -418,7 +357,7 @@ tr:last-child .technique-cell {
 }
 
 .technique-content pre {
-    background: #2c3e50;
+    background: #111111;
     color: #ecf0f1;
     padding: 1rem;
     border-radius: 5px;
@@ -441,13 +380,14 @@ tr:last-child .technique-cell {
 
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 .btn-primary {
@@ -459,35 +399,50 @@ tr:last-child .technique-cell {
 .btn-primary:hover {
     background: #d13a1f;
     border-color: #d13a1f;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: white !important;
 }
 
 /* Footer */
 .site-footer {
     background: #000000;
     color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.site-footer .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.footer-team {
+    margin: 0;
+    font-size: 1rem;
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.footer-logo {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+    right: -5px;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;
-    }
-
-    .header-logo {
-        height: 30px;
-        width: auto;
-        object-fit: contain;
-    }
-
-    .hero-logo-img {
-        height: 60px;
-        width: auto;
-        object-fit: contain;
     }
 
     .hero h1 {
@@ -507,37 +462,12 @@ tr:last-child .technique-cell {
         padding: 0.75rem 0.5rem;
     }
 
-    .legend-items {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .technique-header h1 {
-        font-size: 2rem;
-    }
-
     .technique-content {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .site-title {
-        font-size: 1.5rem;
-    }
-
-    .header-logo {
-        height: 25px;
-        width: auto;
-        object-fit: contain;
-    }
-
-    .hero-logo-img {
-        height: 50px;
-        width: auto;
-        object-fit: contain;
-    }
-
     .hero h1 {
         font-size: 1.8rem;
     }
