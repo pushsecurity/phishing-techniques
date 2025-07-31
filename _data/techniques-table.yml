@@ -65,6 +65,7 @@ columns:
     techniques:
       - "session-theft"
       - "credential-theft"
+      - "device-code-phishing"
       - "consent-phishing"
       - "verification-phishing"
       - "app-specific-passwords"
