@@ -1,7 +1,7 @@
 title: Phishing Detection Evasion Techniques
 description: A collection of phishing techniques used to evade detection from Push Security.
-baseurl: "/phishing-techniques"
-url: "https://pushsecurity.github.io"
+baseurl: ""
+url: "https://phishing-techniques.pushsecurity.com"
 
 # Build settings
 markdown: kramdown
