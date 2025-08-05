@@ -25,3 +25,4 @@ The most common methods used are:
 - [Example 3: Using WhatsApp shortened URLs](https://www.menlosecurity.com/blog/google-drawings-and-whatsapp-zero-hour-open-redirection-phish-exposed)
 - [Example 4: Using custom URL shorteners](https://alluresecurity.com/link-shortner-services-for-credential-harvesting/)
 - [Example 5: URL schema obfuscation](https://cloud.google.com/blog/topics/threat-intelligence/url-obfuscation-schema-abuse/) — Using URL schema obfuscation and encoding to mask phishing URLs by abusing the way that browsers handle addresses including the @ symbol.
+- [Example 6: Attackers abuse link wrapping services to steal M365 logins.](https://www.bleepingcomputer.com/news/security/attackers-exploit-link-wrapping-services-to-steal-microsoft-365-logins/)
