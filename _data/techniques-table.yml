@@ -45,6 +45,7 @@ columns:
       - "single-use-links"
       - "conditional-loading"
       - "anti-sandbox"
+      - "cross-domain-iframes"
 
   - name: "Page Obfuscation"
     techniques:
@@ -53,6 +54,7 @@ columns:
       - "visual-obfuscation"
       - "code-obfuscation"
       - "desktop-control"
+      - "cross-domain-iframes"
 
   - name: "Defeat MFA & CA"
     techniques:
