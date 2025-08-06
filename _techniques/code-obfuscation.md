@@ -10,6 +10,8 @@ description: Using obfuscated page code to prevent analysis
 
 Attackers are using various techniques to obfuscate the page code in order to prevent analysis, typically through encoding and dynamically generating page code. 
 
+Page code is often obfuscated using encryption libraries or simple XOR encryption. The code must include the decryption keys so that it can load in the browser. But without analysing or running the code, the web payloads look completely random from a network level — making it extremely tough to detect in that way as there are no static signatures. 
+
 By obfuscating the page code, there are fewer elements that can be analysed using signature-based checks searching for indicators of malicious content. 
 
 ## Examples
