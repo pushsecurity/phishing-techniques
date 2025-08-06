@@ -50,8 +50,9 @@ columns:
     techniques:
       - "dom-obfuscation"
       - "page-obfuscation"
-      - "desktop-control"
+      - "visual-obfuscation"
       - "code-obfuscation"
+      - "desktop-control"
 
   - name: "Defeat MFA & CA"
     techniques:
