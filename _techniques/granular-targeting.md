@@ -1,10 +1,10 @@
 ---
 layout: technique
-title: Granular targeting
+title: Granular user/domain targeting
 description: Targeting specific organizations, domains, users, and more
 ---
 
-# Granular targeting
+# Granular user/domain targeting
 
 ## Summary
 
