@@ -1,10 +1,10 @@
 ---
 layout: technique
-title: Identity provider
+title: Identity provider accounts
 description: Targeting cloud identity providers to maximize breach impact
 ---
 
-# Identity provider
+# Identity provider accounts
 
 ## Summary
 
