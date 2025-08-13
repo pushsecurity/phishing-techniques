@@ -20,6 +20,7 @@ This prevents many link-based analysis techniques from flagging the malicious pa
 - [Example 2: Using Cloudflare developer domains to host phishing sites](https://pushsecurity.com/blog/how-aitm-phishing-kits-evade-detection/#id-step-1-cloudflare-workers-for-the-initial-gateway) — Cloudflare’s pages.dev and workers.dev domains are increasingly used by attackers for phishing domains. Cloudflare Workers are a serverless execution environment (a bit like AWS Lambdas) to prevent checks based on uncategorized/rare domains.
 - [Example 3: Azure Front Door used to host AiTM sites](https://www.aitm-feed.com/blog/azure-front-door-aitm-phishing) — Azure FD used to host AiTM phishing pages, using multiple redirect stages e.g. page1.azurefd.net to page2.azurefd.net, etc.), targeting the World Food Programme, UNICEF, major news outlets, and even U.S. government email accounts.
 - [Example 4: Multiple cloud storage phishing links used to obfuscate malicious sites used in phishing campaigns](https://radicl.com/radicl-blog/cloudy-with-a-chance-of-cc-theft) — Methods include distributing a HTML file hosted on a Linode Object Storage URL.
+- [Example 5: Using ADFS to redirect Microsoft links to a phishing URL](https://pushsecurity.com/blog/phishing-with-active-directory-federation-services/) — This attack combines malvertising with Microsoft-hosted phishing links via ADFS. 
 
 ## Further reading
 — [Useful resource of sites that allow attackers to “live off trusted sites”](https://lots-project.com/)
