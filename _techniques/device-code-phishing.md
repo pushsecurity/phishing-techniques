@@ -10,7 +10,7 @@ description: Abusing device login flows to bypass MFA
 
 To get around phishing-resistant authentication methods, attackers are using device code phishing attacks that take advantage of alternative authentication flows for devices which do not support passkey-based logins, e.g. because they don’t have web browsers, or have limited input capabilities. 
 
-This typically involves phishing a one-time access code from the victim alongside, or instead of, a password-based login, substituting the typical MFA process. 
+This typically involves phishing a one-time access code from the victim alongside, or instead of, a password-based login, substituting the typical MFA process, OR delivering an attacker-requested device code to the victim for them to authorize an integration with an attacker-controlled application. 
 
 ## Examples
 
